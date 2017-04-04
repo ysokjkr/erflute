@@ -51,7 +51,10 @@ public class ERVirtualDiagramSet extends AbstractModel implements Iterable<ERVir
 
     public int remove(ERVirtualDiagram vdiagram) {
         final int index = this.vdiagrams.indexOf(vdiagram);
-        vdiagrams.remove(index);
+        System.out.println("index" + index);
+        System.out.println("vdiagram" + vdiagram);
+
+        vdiagrams.remove(vdiagram);
         firePropertyChange(PROPERTY_CHANGE_MODEL_SET, null, null);
 
         return index;
