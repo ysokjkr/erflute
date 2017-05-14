@@ -86,12 +86,6 @@ public class ERDiagramOutlinePopupMenuManager extends MenuManager {
             orderByMenu.add(this.getAction(ChangeOutlineViewOrderByLogicalNameAction.ID));
             this.add(orderByMenu);
 
-            final MenuManager deleteByMenu = new MenuManager("VDELETE");
-            deleteByMenu.add(this.getAction(DeleteVirtualDiagramAction.ID));
-            this.add(deleteByMenu);
-
-            //this.add(this.getAction(ActionFactory.DELETE));
-
             this.addMenuListener(new IMenuListener() {
                 @Override
                 public void menuAboutToShow(IMenuManager manager) {

@@ -185,8 +185,8 @@ public class ERDiagram extends ViewableModel {
         System.out.println("DELETETermodel" + ermodel);
 
         System.out.println("DELETETermodelNAME" + ermodel.getName());
-        System.out.println("DELETETermodelSET" + diagramContents.getVirtualDiagramSet().);
-        diagramContents.getVirtualDiagramSet().remove(ermodel);
+        System.out.println("DELETETermodelSET" + diagramContents.getVirtualDiagramSet());
+        diagramContents.getVirtualDiagramSet().removeByName(ermodel.getName());
         firePropertyChange(PROPERTY_CHANGE_ADD, ermodel, null);
     }
 

@@ -17,7 +17,7 @@ public class DeleteVirtualDiagramAction extends AbstractOutlineBaseAction {
     public static final String ID = DeleteVirtualDiagramAction.class.getName();
 
     public DeleteVirtualDiagramAction(TreeViewer treeViewer) {
-        super(ID, "DeleteDiagram", treeViewer);
+        super(ID, "Delete Virtual Diagram", treeViewer);
     }
 
     @Override
